@@ -1,7 +1,12 @@
 package com.xiaoti.dp.filter;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Main {
 
+	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	
 	/**
 	 * @param args
 	 */
@@ -19,6 +24,7 @@ public class Main {
 		fc.addFilter(fc2);
 		mp.setFc(fc);
 		String result = mp.process();
+		
 		System.out.println(result);
 	}
 
